@@ -57,12 +57,27 @@ export default function Thanks() {
                     src='https://dashboard.doppler.com/imgs/logo-long.svg'
                   />
                 </Box>
+                <Box as={Link} rel='sponsored' href='https://workos.com/?utm_campaign=github_repo&utm_medium=referral&utm_content=developer_roadmap&utm_source=github' target='_blank' borderWidth={1} borderRadius='5px' p='20px'
+                     bg='teal.50'>
+                  <Image
+                      alt=''
+                      w='400px'
+                      src='/sponsors/workos-logo.svg'
+                  />
+                </Box>
                 <Box as={Link} rel='sponsored' href='https://oss.capital/' target='_blank' borderWidth={1} borderRadius='5px' p='20px'
                      bg='teal.50'>
                   <Image
                     alt=''
                     w='400px'
                     src='/sponsors/oss-capital-logo.svg'
+                  />
+                </Box>
+                <Box as={Link} rel='sponsored' href='https://getform.io/' target='_blank' borderWidth={1} bg='black' borderRadius='5px' p='20px'>
+                  <Image
+                    alt=''
+                    w='400px'
+                    src='https://i.imgur.com/5z2LGug.png'
                   />
                 </Box>
                 <Box as={Link} rel='sponsored' href='https://studio3t.com/' target='_blank' borderWidth={1} borderRadius='5px' p='20px'
@@ -111,6 +126,8 @@ export default function Thanks() {
             <Box mt='40px'>
               <Heading mb='15px' fontSize='25px' as='h2'>Past or One Time Sponsors</Heading>
               <UnorderedList>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/kevin-bog'>Kevin Bot</Link></ListItem>
                 <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
                                          href='https://github.com/werber'>Myroslav</Link></ListItem>
                 <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
